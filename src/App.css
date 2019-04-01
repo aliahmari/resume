@@ -1,0 +1,30 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.first {
+  background: linear-gradient(75deg, #f6f6f6, #fefefe) repeat-x;
+}
+.title {
+  color: #000;
+  font-size: 60px;
+}
+.subtitle {
+  color: #000;
+  font-size: 25px;
+  font-weight: normal;
+}
+.socialicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  padding: 5px 5px 5px 5px;
+}
+.second {
+  background-color: #ffffff;
+}
+.third {
+  background: linear-gradient(75deg, #f6f6f6, #fefefe) repeat-x;
+}
