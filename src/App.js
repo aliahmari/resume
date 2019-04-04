@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import data from "./data.json";
-/* import logo from "./logo.svg"; */
 import "./App.css";
 import TitlesAndIcons from "./Sections/TitlesAndIcons.js";
 import AboutSection from "./Sections/AboutSection";
