@@ -9,14 +9,20 @@
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "chroma-js": "^2.0.3",
+    "lodash.throttle": "^4.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-responsive": "^6.1.1",
     "react-scripts": "2.1.8",
     "react-scroll": "^1.7.11",
+    "react-scrolling-color-background": "^1.0.2",
     "react-snowstorm": "0.0.3",
     "react-sticky": "^6.0.3",
-    "react-sticky-nav": "^3.1.5"
+    "react-sticky-nav": "^3.1.5",
+    "react-tooltip": "^3.10.0",
+    "scroll-background": "^1.0.5"
   },
   "scripts": {
     "predeploy": "npm run build",

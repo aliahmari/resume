@@ -3,15 +3,14 @@ import data from "../data.json";
 import Fullpage from "../components/Fullpage";
 import { SocialIcon } from "react-social-icons";
 import DownIcon from "../components/DownIcon";
-import SnowStorm from "react-snowstorm";
 import { Link, Element } from "react-scroll";
+import "./TitlesAndIcons.css";
 
 class TitlesAndIcons extends Component {
   render() {
     return (
       <div>
-        <Fullpage className="first">
-          <SnowStorm followMouse ={false} snowColor={"#000"} />
+        <Fullpage className="first" color={this.props.color}>
           <h1 className="title">{data.title}</h1>
           <h2 className="subtitle">{data.subtitle}</h2>
           <div className="socialicons">

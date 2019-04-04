@@ -1,53 +1,59 @@
 {
-    "title": "Hello, I'm Ali!",
-    "subtitle": "Social media expert at NightSky L.L.C",
-    "links": {
-        "telegram": "https://t.me/ali_ahmari",
-        "linkedin": "https://ir.linkedin.com/in/ali-ahmari-87110bbb",
-        "twitter": "https://twitter.com/aliahmarix"
-    },
-    "sections": [
+  "jsicon": "faJsSquare",
+  "htmlicon": "faHtml5",
+  "title": "Hello, I'm Ali!",
+  "subtitle": "Social media expert at NightSky L.L.C",
+  "links": {
+    "telegram": "https://t.me/ali_ahmari",
+    "linkedin": "https://ir.linkedin.com/in/ali-ahmari-87110bbb",
+    "twitter": "https://twitter.com/aliahmarix"
+  },
+  "sections": [
+    {
+      "title": "About",
+      "items": [
         {
-            "title": "About",
-            "items": [
-                {
-                    "type": "p",
-                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus. Fermentum dui faucibus in ornare quam. Consectetur a erat nam at lectus urna duis convallis convallis. Consequat mauris nunc congue nisi. Lacus viverra vitae congue eu consequat ac felis donec. Quam pellentesque nec nam aliquam sem. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Auctor urna nunc id cursus. Eu lobortis elementum nibh tellus."
-                }
-            ]
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus. Fermentum dui faucibus in ornare quam. Consectetur a erat nam at lectus urna duis convallis convallis. Consequat mauris nunc congue nisi. Lacus viverra vitae congue eu consequat ac felis donec. Quam pellentesque nec nam aliquam sem. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Auctor urna nunc id cursus. Eu lobortis elementum nibh tellus."
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "items": [
+        {
+          "type": "card",
+          "icon": "faJsSquare",
+          "content": {
+            "image": "faJsSquare",
+            "title": "React"
+          }
         },
         {
-            "title": "skills",
-            "items": [
-                {
-                    "type": "card",
-                    "content": {
-                        "image": "faJs",
-                        "title": "React"
-                    }
-                },
-                {
-                    "type": "card",
-                    "content": {
-                        "image": "faJs",
-                        "title": "Javascript"
-                    }
-                },
-                {
-                    "type": "card",
-                    "content": {
-                        "image": "faJs",
-                        "title": "HTML"
-                    }
-                },
-                {
-                    "type": "card",
-                    "content": {
-                        "image": "faJs",
-                        "title": "CSS"
-                    }
-                }
-            ]
+          "type": "card",
+          "icon": "faJsSquare",
+          "content": {
+            "image": "faJsSquare",
+            "title": "Javascript"
+          }
+        },
+        {
+          "type": "card",
+          "icon": "faJsSquare",
+          "content": {
+            "image": "faJsSquare",
+            "title": "HTML"
+          }
+        },
+        {
+          "type": "card",
+          "icon": "faJsSquare",
+          "content": {
+            "image": "faJsSquare",
+            "title": "CSS"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

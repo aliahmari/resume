@@ -1,0 +1,19 @@
+.title {
+    color: #000;
+    font-size: 60px;
+  }
+  .subtitle {
+    color: #000;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .socialicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    padding: 5px 5px 5px 5px;
+  }
+  

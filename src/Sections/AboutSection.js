@@ -9,7 +9,7 @@ class AboutSection extends Component {
   render() {
     return (
       <div>
-        <Fullpage className="second">
+        <Fullpage className="second" color={this.props.color}>
           <h3 className="title">{data.sections[0].title}</h3>
           <div className="BackgroundBox">
             <p className="aboutcontent">{data.sections[0].items[0].content}</p>

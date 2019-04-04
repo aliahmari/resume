@@ -7,7 +7,7 @@ import "./Skills.css";
 class Skills extends Component {
   render() {
     return (
-      <Fullpage className="third">
+      <Fullpage className="third" color={this.props.color}>
         <h3 className="title">{data.sections[1].title}</h3>
         <div className="cardWrapper">
           {data.sections[1].items.map(eachSkill => {

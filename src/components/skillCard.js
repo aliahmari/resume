@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./skillCard.css";
-import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
+import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class SkillCard extends Component {
@@ -9,7 +9,7 @@ class SkillCard extends Component {
     return (
       <div className="card">
         <div className="icon-wrapper">
-          <FontAwesomeIcon icon={faJsSquare} />
+          <FontAwesomeIcon icon={faLayerGroup} />
         </div>
         <div className="skill-title-wrapper">
           <h4>{skill.content.title}</h4>
@@ -23,4 +23,4 @@ class SkillCard extends Component {
     );
   }
 }
-export default SkillCard
+export default SkillCard;

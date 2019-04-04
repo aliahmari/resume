@@ -1,30 +1,63 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-.first {
-  background: linear-gradient(75deg, #f6f6f6, #fefefe) repeat-x;
-}
-.title {
-  color: #000;
-  font-size: 60px;
-}
-.subtitle {
-  color: #000;
-  font-size: 25px;
-  font-weight: normal;
-}
-.socialicons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.icon {
-  padding: 5px 5px 5px 5px;
-}
-.second {
-  background-color: #ffffff;
-}
-.third {
-  background: linear-gradient(75deg, #f6f6f6, #fefefe) repeat-x;
-}
+
+
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2a3e55;
+    padding: 15px 5px 15px 5px;
+    z-index: 9999999999;
+    color: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.03) !important;
+    border-bottom: 3px solid #dedede;
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+  }
+  .innerNav {
+    margin-right: 5%;
+    margin-left: 5%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    padding: 0 15px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .stickyNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  .ChangeColor {
+    display: flex;
+    flex-direction: row;
+    direction: ltr;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    flex: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 10px 10px 10px;
+  }
+  
