@@ -7,9 +7,31 @@ import AboutSection from "./Sections/AboutSection";
 import Skills from "./Sections/Skills";
 import { Link, Element } from "react-scroll";
 import SnowStorm from "react-snowstorm";
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 import ReactTooltip from 'react-tooltip'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.addNotification = this.addNotification.bind(this);
+    this.notificationDOMRef = React.createRef();
+  }
+
+  addNotification() {
+    this.notificationDOMRef.current.addNotification({
+      title: "Site's style changed",
+      message: "Click again to see other style!",
+      type: "info",
+      insert: "bottom",
+      container: "bottom-right",
+      animationIn: ["animated", "fadeIn"],
+      animationOut: ["animated", "fadeOut"],
+      dismiss: { duration: 4000 },
+      dismissable: { click: true }
+    });
+  }
+
   state = {
     first: "#f6f6f6",
     second: "#ffffff",
@@ -25,7 +47,6 @@ class App extends Component {
     navBackgroundColor: "#2a3e55",
     innerNavBg: "none",
     firstSectionBg: "#f6f6f6",
-    btnname: "Change Style!",
     datatip: "Current theme is Defualt"
   };
 
@@ -41,9 +62,10 @@ class App extends Component {
       first: this.state.first === "#fff6f6" ? "#f6f6f6" : "#fff6f6",
       second: this.state.second === "#f6f6f6" ? "#ffffff" : "#f6f6f6",
       third: this.state.third === "#fff6f6" ? "#f6f6f6" : "#fff6f6",
-      btnname: this.state.btnname === "Change Style!" ? "Changed!" : "Change Style!",
-      datatip: this.state.datatip === "Current theme is Awful🤮" ? "Current theme is Defualt" : "Current theme is Awful🤮"
-
+      datatip:
+        this.state.datatip === "Current theme is Awful🤮"
+          ? "Current theme is Defualt"
+          : "Current theme is Awful🤮"
     });
   };
 
@@ -96,7 +118,9 @@ class App extends Component {
                 Skills
               </a>
             </Link>
-            <a data-tip={this.state.datatip}
+            <ReactNotification ref={this.notificationDOMRef} />
+            <a
+              data-tip={this.state.datatip}
               style={{
                 color: this.state.btnColor,
                 border: this.state.btnBorder
@@ -104,18 +128,20 @@ class App extends Component {
               className="stickyNav ChangeColor"
               onClick={() => {
                 this.ChangeColor();
+                this.addNotification();
               }}
             >
-              {this.state.btnname}
+              Change Style!
             </a>
             <ReactTooltip place="right" type="dark" effect="solid"/>
           </div>
         </div>
-
+        
         <TitlesAndIcons color={this.state.first} />
         <AboutSection color={this.state.second} />
         <Skills color={this.state.third} />
         <SnowStorm followMouse={false} snowColor={"#000"} />
+        
       </div>
     );
   }
